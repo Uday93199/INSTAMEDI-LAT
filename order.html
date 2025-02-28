@@ -1,0 +1,178 @@
+<!doctype html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>InstaMedi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    /* From Uiverse.io by kennyotsu */ 
+.notifications-container {
+  width: 320px;
+  height: auto;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.success {
+  padding: 1rem;
+  border-radius: 0.375rem;
+  background-color: rgb(240 253 244);
+}
+
+.succes-svg {
+  color: rgb(74 222 128);
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.success-prompt-wrap {
+  margin-left: 0.75rem;
+}
+
+.success-prompt-heading {
+  font-weight: bold;
+  color: rgb(22 101 52);
+}
+
+.success-prompt-prompt {
+  margin-top: 0.5rem;
+  color: rgb(21 128 61);
+}
+
+.success-button-container {
+  display: flex;
+  margin-top: 0.875rem;
+  margin-bottom: -0.375rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.success-button-main {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: #ECFDF5;
+  color: rgb(22 101 52);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  border-radius: 0.375rem;
+  border: none
+}
+
+.success-button-main:hover {
+  background-color: #D1FAE5;
+}
+
+.success-button-secondary {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-left: 0.75rem;
+  background-color: #ECFDF5;
+  color: #065F46;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border-radius: 0.375rem;
+  border: none;
+}
+
+  </style>
+</head>
+<body class="bg-gray-50">
+  <header class="bg-gray-800 shadow">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center">
+        <img alt="InstaMedi logo" class="h-8" height="50" src="https://storage.googleapis.com/a1aa/image/D-GFszZfV4MPzd5zrRLq9ooJpqViBf9t1WERkIOaEuM.jpg" width="100"/>
+        <span class="ml-2 text-xl font-bold text-white" onclick="window.location.href='index.html'">InstaMedi</span>
+      </div>
+      <div class="flex items-center space-x-4">
+        <div class="relative">
+          <input class="border rounded-full py-2 px-4 pl-10 w-64" placeholder="Search for Dolo" type="text"/>
+          <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+        </div>
+        <a class="text-gray-600" href="#">LOGIN</a>
+        <a class="text-gray-600 cart-link" href="#">CART</a>
+        <a class="text-gray-600" href="#" onclick="window.location.href='about.html'">ABOUT US</a>
+        <a class="text-gray-600" href="#">ENGLISH</a>
+      </div>
+    </div>
+  </header>
+ <!-- From Uiverse.io by kennyotsu --> 
+<div class="notifications-container">
+    <div class="success">
+      <div class="flex">
+        <div class="flex-shrink-0">
+          
+          <svg class="succes-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+          </svg>
+        </div>
+        <div class="success-prompt-wrap">
+          <p class="success-prompt-heading">Order completed
+          </p><div class="success-prompt-prompt">
+            <p>Thank you for choosing our services. We are pleased to inform you that your order has been successfully placed and is now being processed..</p>
+          </div>
+           
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-gray-800 text-white py-8 " style="position: fixed; bottom: 0;width: 100%;">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-lg font-semibold mb-4">InstaMedi</h3>
+          <p class="mb-4">InstaMedi is the fastest and most affordable Medicine Delivery Service in India, bringing down medicine delivery time from a day to 30 minutes</p>
+          <h4 class="font-semibold mb-2">Featured Categories</h4>
+          <p>Personal Care | Ayurvedic Products | Diabetic Care | Medicine | Vitamins &amp; Supplements | Healthcare products | Super Speciality | Health Supplements</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Overview</h4>
+          <ul>
+            <li class="mb-2"><a class="hover:underline" href="#">Blogs</a></li>
+            <li class="mb-2"><a class="hover:underline" href="#">Medicines</a></li>
+            <li class="mb-2"><a class="hover:underline" href="#">Healthcare Devices</a></li>
+            <li class="mb-2"><a class="hover:underline" href="#">Health Progress</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Explore</h4>
+          <ul>
+            <li class="mb-2"><a class="hover:underline" href="#">Contact Us</a></li>
+            <li class="mb-2"><a class="hover:underline" href="#">Privacy Policy</a></li>
+            <li class="mb-2"><a class="hover:underline" href="#">Help &amp; Support</a></li>
+            <li class="mb-2"><a class="hover:underline" href="#">Terms and Conditions</a></li>
+            <li class="mb-2"><a class="hover:underline" href="#">Shipping and Delivery Policy</a></li>
+            <li class="mb-2"><a class="hover:underline" href="#">Cancellation and Refund Policies</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white mt-8 pt-4 text-center">
+        <p>© 2024 InstaMedi All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+ 
+ 
+</body>
+</html>
